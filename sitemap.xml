@@ -6,7 +6,7 @@
 
     <!-- Page principale - Landing page Expert TYPO3 -->
     <url>
-        <loc>https://www.expert-typo3.com</loc>
+        <loc>https://www.expert-typo3.com/</loc>
         <lastmod>2025-01-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -14,28 +14,35 @@
 
     <!-- Ancres importantes de la page (pour le référencement des sections) -->
     <url>
-        <loc>https://www.expert-typo3.com#extensions</loc>
+        <loc>https://www.expert-typo3.com/#extensions</loc>
         <lastmod>2025-01-02</lastmod>
-        <changefreq>quarterly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.expert-typo3.com#expertise</loc>
+        <loc>https://www.expert-typo3.com/#expertise</loc>
         <lastmod>2025-01-02</lastmod>
-        <changefreq>quarterly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.expert-typo3.com#portfolio</loc>
+        <loc>https://www.expert-typo3.com/#portfolio</loc>
         <lastmod>2025-01-02</lastmod>
-        <changefreq>quarterly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.expert-typo3.com#contact</loc>
+        <loc>https://www.expert-typo3.com/#contact</loc>
+        <lastmod>2025-01-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://expert-typo3.fr/#contact</loc>
         <lastmod>2025-01-02</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
