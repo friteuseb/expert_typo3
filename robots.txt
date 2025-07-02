@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://expert-typo3.fr/sitemap.xml
+
+# Optimisations pour les moteurs de recherche
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Interdire l'accès aux fichiers système si présents
+Disallow: /.htaccess
+Disallow: /error_log
+Disallow: /logs/
+
+# Crawl-delay pour éviter la surcharge serveur
+Crawl-delay: 1
