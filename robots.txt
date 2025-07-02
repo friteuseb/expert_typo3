@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://expert-typo3.fr/sitemap.xml
+Sitemap: https://www.expert-typo3.com/sitemap.xml
 
 # Optimisations pour les moteurs de recherche
 User-agent: Googlebot
