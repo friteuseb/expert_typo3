@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyril Wolfangel - Expert TYPO3 | Consultant SEO & Développeur Extensions</title>
+    <meta name="description" content="Expert TYPO3 depuis 2003 - Consultant SEO, développeur des extensions semantic_suggestion et page_link_insights. Spécialiste IA et transformation digitale chez Talan.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 1000px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff8500, #667eea, #764ba2);
+            animation: gradientShift 3s ease-in-out infinite;
+        }
+
+        .hero-section {
+            margin-bottom: 50px;
+        }
+
+        .typo3-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #ff8500, #ff6b00);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+            animation: countUp 2s ease-out;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .extensions-showcase {
+            margin: 50px 0;
+            padding: 40px;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .extensions-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .extensions-subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .extensions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .extension-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .extension-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
+        }
+
+        .extension-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .extension-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .extension-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .extension-link {
+            display: inline-flex;
+            align-items: center;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .extension-link:hover {
+            color: #764ba2;
+            transform: translateX(5px);
+        }
+
+        .expertise-section {
+            margin: 50px 0;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .expertise-item {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .expertise-item:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .expertise-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .expertise-item p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .achievement-section {
+            margin: 50px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border-radius: 15px;
+        }
+
+        .achievement-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .achievement-text {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .cta-section {
+            margin: 50px 0 30px;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .company-mention {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 10px;
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #667eea;
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+        .floating-element:nth-child(2) { top: 60%; left: 80%; animation-delay: 2s; }
+        .floating-element:nth-child(3) { top: 80%; left: 20%; animation-delay: 4s; }
+        .floating-element:nth-child(4) { top: 30%; left: 70%; animation-delay: 1s; }
+        .floating-element:nth-child(5) { top: 70%; left: 50%; animation-delay: 3s; }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .tech-badge {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .tech-badge:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes titleGlow {
+            from { filter: brightness(1); }
+            to { filter: brightness(1.2); }
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes countUp {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 40px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .extensions-grid,
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .extensions-showcase {
+                padding: 20px;
+            }
+
+            .tech-stack {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="card">
+            <div class="hero-section">
+                <div class="typo3-logo">T3</div>
+                
+                <h1>Cyril Wolfangel</h1>
+                <p class="subtitle">Expert TYPO3 & Spécialiste IA - Transformation Digitale</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-badge">TYPO3 Expert</span>
+                    <span class="tech-badge">SEO Consultant</span>
+                    <span class="tech-badge">IA & Digital Strategy</span>
+                    <span class="tech-badge">Extensions Developer</span>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">22</span>
+                        <span class="stat-label">années d'expérience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2003</span>
+                        <span class="stat-label">début avec TYPO3</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">extensions publiées</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">566+</span>
+                        <span class="stat-label">téléchargements TER</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extensions-showcase">
+                <h2 class="extensions-title">🚀 Extensions TYPO3 Innovantes</h2>
+                <p class="extensions-subtitle">Solutions avancées pour l'optimisation SEO et l'analyse sémantique</p>
+                
+                <div class="extensions-grid">
+                    <div class="extension-card">
+                        <div class="extension-icon">🧠</div>
+                        <h3 class="extension-title">Semantic Suggestion</h3>
+                        <p class="extension-description">
+                            Extension révolutionnaire utilisant l'analyse vectorielle et l'IA pour suggérer automatiquement des liens pertinents entre vos pages. 
+                            <strong>En production depuis mars 2025</strong> avec des résultats impressionnants sur Google Search Console.
+                        </p>
+                        <a href="https://extensions.typo3.org/extension/semantic_suggestion" class="extension-link" target="_blank" rel="noopener">
+                            Découvrir sur TER →
+                        </a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <div class="extension-icon">📊</div>
+                        <h3 class="extension-title">Page Link Insights</h3>
+                        <p class="extension-description">
+                            Module backend interactif avec visualisation D3.js pour analyser la structure des liens internes. 
+                            Calcul de PageRank, métriques de centralité, détection de liens brisés et clustering thématique.
+                        </p>
+                        <a href="https://github.com/friteuseb/page_link_insights" class="extension-link" target="_blank" rel="noopener">
+                            Voir sur GitHub →
+                        </a>
+                    </div>
+                    
+                    <div class="extension-card">
+                        <div class="extension-icon">🔤</div>
+                        <h3 class="extension-title">NLP Tools</h3>
+                        <p class="extension-description">
+                            Extension fondamentale fournissant les capacités de traitement du langage naturel. 
+                            Détection automatique de langue, filtrage des mots vides, vectorisation et clustering pour l'analyse sémantique.
+                        </p>
+                        <a href="https://github.com/friteuseb/nlp_tools" class="extension-link" target="_blank" rel="noopener">
+                            Code source →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-section">
+                <h2 class="achievement-title">🏆 Expertise Reconnue</h2>
+                <p class="achievement-text">
+                    <strong>Auteur d'un article de référence</strong> publié sur TYPO3.org : 
+                    <em>"Optimizing Website Internal Linking With TYPO3 Extensions"</em>. 
+                    Mes solutions innovantes transforment l'optimisation des liens internes d'une tâche manuelle en un processus automatisé 
+                    guidé par l'intelligence artificielle et l'analyse sémantique.
+                </p>
+            </div>
+
+            <div class="expertise-section">
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <h3>🔧 Intégration TYPO3</h3>
+                        <p>Expertise complète depuis 2003, de la conception à la mise en production de sites complexes</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>🔍 SEO & Cocons Sémantiques</h3>
+                        <p>Stratégies avancées d'optimisation et création de maillages internes intelligents</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>🤖 IA & Transformation Digitale</h3>
+                        <p>Intégration de solutions d'intelligence artificielle pour révolutionner les stratégies digitales</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>📈 Analyse de Performance</h3>
+                        <p>Audits techniques, optimisation des performances et métriques avancées (PageRank, centralité)</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>👨‍💼 Product Owner</h3>
+                        <p>Direction produit pour applications mobiles et web dans l'industrie cosmétique</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>🏗️ Architecture Technique</h3>
+                        <p>Conception de solutions scalables et mise en place de "website factories" multi-marques</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="https://www.linkedin.com/in/cyril-wolfangel/" class="cta-button" target="_blank" rel="noopener">
+                    🔗 Découvrir mon profil LinkedIn
+                </a>
+                <a href="https://cyril-wolfangel.com/" class="cta-button" target="_blank" rel="noopener">
+                    📄 Consulter mon CV complet
+                </a>
+            </div>
+            
+            <div class="company-mention">
+                <strong>🏢 Avec mon équipe chez Talan</strong>, nous proposons une gamme complète de services TYPO3 : 
+                maintenance, développement, montée en version, développements spécifiques et prestations de conseil stratégique. 
+                Nous accompagnons les entreprises du Fortune 500 dans leur transformation digitale.
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; background: rgba(255, 255, 255, 0.5); border-radius: 10px; font-size: 0.9rem; color: #666;">
+                <strong>📞 Contact :</strong> 
+                <a href="mailto:cyril.wolfangel@gmail.com" style="color: #667eea; text-decoration: none;">cyril.wolfangel@gmail.com</a> | 
+                <strong>Slack TYPO3 :</strong> #semantic_suggestion | 
+                <strong>GitHub :</strong> @friteuseb
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animation des chiffres au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = stat.textContent;
+                if (target.includes('+')) {
+                    const num = parseInt(target);
+                    animateNumber(stat, num, '+');
+                } else if (!isNaN(target)) {
+                    const num = parseInt(target);
+                    if (num > 100) {
+                        stat.style.opacity = '1';
+                    } else {
+                        animateNumber(stat, num);
+                    }
+                } else {
+                    stat.style.opacity = '1';
+                }
+            });
+        });
+
+        function animateNumber(element, target, suffix = '') {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + suffix;
+                }
+            }, 40);
+        }
+
+        // Effet de parallaxe pour les éléments flottants
+        document.addEventListener('mousemove', function(e) {
+            const elements = document.querySelectorAll('.floating-element');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            elements.forEach((element, index) => {
+                const speed = (index + 1) * 0.5;
+                const moveX = (x - 0.5) * speed * 10;
+                const moveY = (y - 0.5) * speed * 10;
+                element.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            });
+        });
+
+        // Effet de hover sur les badges tech
+        document.querySelectorAll('.tech-badge').forEach(badge => {
+            badge.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05) translateY(-2px)';
+            });
+            badge.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) translateY(0)';
+            });
+        });
+
+        // Effet de click sur les boutons CTA
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Effet de ripple
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Animation d'apparition au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer les éléments animés
+        document.querySelectorAll('.extension-card, .expertise-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+
+    <style>
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(0);
+            animation: rippleEffect 0.6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes rippleEffect {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        .extension-link {
+            font-size: 0.95rem;
+        }
+
+        .extension-link::after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 2px;
+            background: #667eea;
+            transition: width 0.3s ease;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+        }
+
+        .extension-link:hover::after {
+            width: 100%;
+        }
+
+        .extension-link {
+            position: relative;
+        }
+    </style>
+</body>
+</html>
