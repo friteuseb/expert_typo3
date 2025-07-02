@@ -41,11 +41,4 @@
         <priority>0.7</priority>
     </url>
 
-    <url>
-        <loc>https://expert-typo3.fr/#contact</loc>
-        <lastmod>2025-01-02</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
 </urlset>
