@@ -4,31 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <title>Cyril Wolfangel - Expert TYPO3 | Consultant SEO & Développeur Extensions</title>
-    <meta name="description" content="Expert TYPO3 depuis 2003 - Consultant SEO, développeur des extensions semantic_suggestion et page_link_insights. Spécialiste IA et transformation digitale chez Talan.">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLZW3TMJQ7"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-FLZW3TMJQ7');
-    </script>
+    <title>Fermeture du site expert-typo3.com</title>
+    <meta name="description" content="Le site expert-typo3.com est désormais fermé pour respecter la politique d'utilisation de la marque TYPO3®.">
     <style>
         :root {
             --primary-color: #ff8500;
-            --secondary-color: #667eea;
-            --accent-color: #764ba2;
             --text-dark: #2c3e50;
             --text-medium: #5a6c7d;
-            --text-light: #7f8c8d;
             --bg-light: #f8fafc;
             --white: #ffffff;
             --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.15);
             --border-radius: 12px;
-            --transition: all 0.3s ease;
         }
 
         * {
@@ -39,1120 +25,300 @@
 
         body {
             font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--text-dark);
-            background: var(--bg-light);
-        }
-
-        /* Navigation */
-        .nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e3f2fd 100%);
+            min-height: 100vh;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 3rem;
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--bg-light);
         }
 
         .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--primary-color);
-        }
-
-        .logo-icon {
-            width: 80px;
-            height: 24px;
+            width: 120px;
+            height: 36px;
+            margin: 0 auto 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .logo-icon img {
+        .logo img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-medium);
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 8rem 2rem 4rem;
-            text-align: center;
-            background: linear-gradient(135deg, #f8fafc 0%, #e3f2fd 100%);
-        }
-
-        .hero-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255, 133, 0, 0.1);
-            color: var(--primary-color);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(255, 133, 0, 0.2);
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: var(--text-dark);
-            margin-bottom: 0.5rem;
-            line-height: 1.1;
-        }
-
-        .hero-title-highlight {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: 1.3rem;
-            color: var(--text-medium);
-            margin-bottom: 2rem;
-            font-weight: 400;
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin: 2rem 0;
-            flex-wrap: wrap;
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
-            display: block;
+        h1 {
             font-size: 2.2rem;
             font-weight: 700;
-            color: var(--primary-color);
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-light);
-        }
-
-        .cta-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, var(--primary-color), #e67e00);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: var(--transition);
-            margin: 0.5rem;
-            box-shadow: var(--shadow);
-        }
-
-        .cta-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .cta-secondary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: white;
-            color: var(--text-dark);
-            padding: 1rem 2rem;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: var(--transition);
-            margin: 0.5rem;
-            box-shadow: var(--shadow);
-            border: 2px solid var(--bg-light);
-        }
-
-        .cta-secondary:hover {
-            border-color: var(--primary-color);
-            transform: translateY(-2px);
-        }
-
-        /* Section communes */
-        .section {
-            padding: 4rem 2rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-badge {
-            display: inline-block;
-            background: rgba(102, 126, 234, 0.1);
-            color: var(--secondary-color);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 1rem;
-        }
-
-        .section-subtitle {
-            font-size: 1.2rem;
-            color: var(--text-medium);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Extensions Section */
-        .extensions {
-            background: white;
-        }
-
-        .extensions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .extension-card {
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 2rem;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-
-        .extension-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .extension-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
-            border-radius: var(--border-radius);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .extension-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 1rem;
-        }
-
-        .extension-description {
-            color: var(--text-medium);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .extension-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
-
-        .extension-downloads {
-            background: rgba(255, 133, 0, 0.1);
-            color: var(--primary-color);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-
-        .extension-status {
-            background: rgba(34, 197, 94, 0.1);
-            color: #22c55e;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-
-        .extension-link {
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .extension-link:hover {
-            color: var(--accent-color);
-        }
-
-        /* Expertise Section */
-        .expertise {
-            background: var(--bg-light);
-        }
-
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 3rem;
-        }
-
-        .expertise-card {
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 1.5rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            transition: var(--transition);
-        }
-
-        .expertise-card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow);
-        }
-
-        .expertise-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .expertise-title {
-            font-size: 1.2rem;
-            font-weight: 600;
             color: var(--text-dark);
             margin-bottom: 0.5rem;
         }
 
-        .expertise-description {
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            font-weight: 500;
+        }
+
+        .notice-box {
+            background: linear-gradient(135deg, rgba(255, 133, 0, 0.08), rgba(255, 133, 0, 0.04));
+            border-left: 4px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 1.8rem;
+            margin: 2rem 0;
+        }
+
+        .notice-box h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .notice-box p {
+            color: var(--text-medium);
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+
+        .notice-box strong {
+            color: var(--text-dark);
+        }
+
+        .content-section {
+            margin: 2.5rem 0;
+        }
+
+        .content-section h2 {
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--bg-light);
+        }
+
+        .resources-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resources-list li {
+            background: var(--bg-light);
+            margin-bottom: 1rem;
+            padding: 1.2rem 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .resources-list li:hover {
+            background: #e8f0fe;
+            transform: translateX(5px);
+        }
+
+        .resources-list strong {
+            color: var(--text-dark);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .resources-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .resources-list a:hover {
+            text-decoration: underline;
+        }
+
+        .info-box {
+            background: #f0f7ff;
+            border: 2px solid #bae0ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .info-box p {
+            color: var(--text-medium);
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--bg-light);
             color: var(--text-medium);
             font-size: 0.95rem;
         }
 
-        /* Portfolio Section */
-        .portfolio {
-            background: white;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .portfolio-card {
-            background: white;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-
-        .portfolio-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .portfolio-image {
-            height: 200px;
-            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
-        }
-
-        .portfolio-content {
-            padding: 1.5rem;
-        }
-
-        .portfolio-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 0.5rem;
-        }
-
-        .portfolio-company {
+        .trademark {
+            display: inline-block;
             color: var(--primary-color);
             font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
         }
 
-        .portfolio-description {
-            color: var(--text-medium);
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-
-        .portfolio-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tech-tag {
-            background: var(--bg-light);
-            color: var(--text-medium);
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, var(--text-dark), #34495e);
-            color: white;
-            text-align: center;
-        }
-
-        .contact .section-title {
-            color: white;
-        }
-
-        .contact .section-subtitle {
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .contact-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: var(--border-radius);
-            backdrop-filter: blur(10px);
-        }
-
-        .contact-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-
-        .contact-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-details {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .contact-details a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .contact-details a:hover {
-            text-decoration: underline;
-        }
-
-        /* Company mention */
-        .company-highlight {
-            background: rgba(255, 133, 0, 0.1);
-            border: 2px solid rgba(255, 133, 0, 0.2);
-            border-radius: var(--border-radius);
-            padding: 2rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
-
-        .company-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .nav-links {
-                display: none;
+            .container {
+                padding: 2rem 1.5rem;
             }
 
-            .hero h1 {
-                font-size: 2.5rem;
+            h1 {
+                font-size: 1.8rem;
             }
 
-            .hero-stats {
-                gap: 1.5rem;
+            .subtitle {
+                font-size: 1rem;
             }
 
-            .section-title {
-                font-size: 2rem;
+            .content-section h2 {
+                font-size: 1.4rem;
             }
 
-            .extensions-grid,
-            .portfolio-grid {
-                grid-template-columns: 1fr;
+            .notice-box {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
             }
 
-            .expertise-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            .container {
+                padding: 1.5rem 1rem;
             }
 
-            .contact-info {
-                grid-template-columns: 1fr;
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .resources-list li {
+                padding: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
+    <div class="container">
+        <div class="header">
             <div class="logo">
-                <div class="logo-icon">
-                    <img src="typo3_nomargins.svg" alt="TYPO3 Logo" />
-                </div>
-                Cyril Wolfangel
+                <img src="typo3_nomargins.svg" alt="TYPO3 Logo" />
             </div>
-            <ul class="nav-links">
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#extensions">Extensions</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <h1>Fermeture du site expert-typo3.com</h1>
+            <p class="subtitle">Cher(e) visiteur(e),</p>
+        </div>
+
+        <p style="text-align: center; color: var(--text-medium); font-size: 1.1rem; margin-bottom: 2rem;">
+            Nous sommes au regret de vous informer que <strong>ce site est désormais fermé</strong>.
+        </p>
+
+        <div class="notice-box">
+            <h2>⚖️ Raison</h2>
+            <p>
+                Afin de respecter scrupuleusement la <strong>politique d'utilisation de la marque TYPO3®</strong> récemment mise à jour,
+                nous devons cesser toute utilisation du terme "TYPO3" dans le nom de domaine.
+            </p>
+            <p>
+                L'utilisation de "TYPO3" dans un nom de domaine comme "<strong>expert-typo3.com</strong>" n'est autorisée pour personne,
+                y compris les membres Gold ou Platinum de l'association TYPO3.
+            </p>
+            <p style="margin-bottom: 0;">
+                Vous pouvez consulter les détails complets de cette politique ici :<br>
+                <a href="https://typo3.org/article/typo3-trademark-usage-whats-allowed-and-whats-not" target="_blank" rel="noopener">
+                    <strong>TYPO3 Trademark Usage: What's Allowed and What's Not</strong>
+                </a>
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>🔗 Où retrouver les ressources officielles TYPO3 ?</h2>
+            <ul class="resources-list">
+                <li>
+                    <strong>Site officiel du projet TYPO3</strong><br>
+                    Téléchargements, news, communauté<br>
+                    <a href="https://typo3.org" target="_blank" rel="noopener">typo3.org</a>
+                </li>
+                <li>
+                    <strong>Site commercial et partenaires certifiés</strong><br>
+                    <a href="https://typo3.com" target="_blank" rel="noopener">typo3.com</a>
+                </li>
+                <li>
+                    <strong>Répertoire des partenaires officiels TYPO3</strong><br>
+                    Pour trouver des experts certifiés<br>
+                    <a href="https://typo3.com/partners" target="_blank" rel="noopener">typo3.com/partners</a>
+                </li>
+                <li>
+                    <strong>Documentation officielle</strong><br>
+                    <a href="https://docs.typo3.org" target="_blank" rel="noopener">docs.typo3.org</a>
+                </li>
+                <li>
+                    <strong>Téléchargements TYPO3</strong><br>
+                    <a href="https://get.typo3.org" target="_blank" rel="noopener">get.typo3.org</a>
+                </li>
             </ul>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-badge">🏆 Expert TYPO3 certifié</div>
-            <h1>
-                <span class="hero-title-highlight">Expert TYPO3</span><br>
-                & spécialiste IA
-            </h1>
-            <p class="hero-subtitle">
-                22 années d'expertise en développement TYPO3, SEO avancé et transformation digitale. 
-                Créateur d'extensions innovantes utilisées par des milliers de développeurs.
+        <div class="info-box">
+            <p>Si vous avez des questions sur cette politique, contactez :</p>
+            <a href="mailto:trademark@typo3.org">trademark@typo3.org</a>
+        </div>
+
+        <div class="footer">
+            <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: var(--text-dark);">
+                Merci pour votre compréhension et votre fidélité !
             </p>
-            
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">22</span>
-                    <span class="stat-label">années d'expérience</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">extensions publiées</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">566+</span>
-                    <span class="stat-label">téléchargements TER</span>
-                </div>
-            </div>
-
-            <div style="margin-top: 2rem;">
-                <a href="https://www.linkedin.com/in/cyrilwolfangel/" class="cta-primary" target="_blank">
-                    🔗 LinkedIn
-                </a>
-                <a href="https://cyril-wolfangel.com/" class="cta-secondary" target="_blank">
-                    📄 CV Complet
-                </a>
-            </div>
+            <p>
+                Nous vous remercions pour ces années de visites et vous souhaitons<br>
+                une excellente continuation avec <span class="trademark">TYPO3®</span>.
+            </p>
         </div>
-    </section>
-
-    <!-- Extensions Section -->
-    <section id="extensions" class="section extensions">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">🚀 Innovations</div>
-                <h2 class="section-title">Extensions TYPO3 innovantes</h2>
-                <p class="section-subtitle">
-                    Solutions pionnières en intelligence artificielle et analyse sémantique pour l'écosystème TYPO3
-                </p>
-            </div>
-
-            <div class="extensions-grid">
-                <div class="extension-card">
-                    <div class="extension-icon">🧠</div>
-                    <h3 class="extension-title">Semantic Suggestion</h3>
-                    <div class="extension-meta">
-                        <span class="extension-downloads">566+ téléchargements</span>
-                        <span class="extension-status">✅ En production</span>
-                    </div>
-                    <p class="extension-description">
-                        Révolutionne les liens internes grâce à l'IA. Analyse vectorielle automatique pour suggérer 
-                        des contenus pertinents. <strong>Résultats prouvés sur Google Search Console depuis mars 2025.</strong>
-                    </p>
-                    <a href="https://extensions.typo3.org/extension/semantic_suggestion" class="extension-link" target="_blank">
-                        Voir sur TER →
-                    </a>
-                    <a href="https://atlas.seostrategy.fr" class="extension-link" target="_blank">
-                        Voir le site de référence →
-                    </a>
-                </div>
-
-                <div class="extension-card">
-                    <div class="extension-icon">📊</div>
-                    <h3 class="extension-title">Page Link Insights</h3>
-                    <div class="extension-meta">
-                        <span class="extension-status">🔄 Active</span>
-                    </div>
-                    <p class="extension-description">
-                        Module backend avec visualisation D3.js interactive. Calcule PageRank, centralité, 
-                        détecte les liens brisés et analyse la structure complète de votre site.
-                    </p>
-                    <a href="https://github.com/friteuseb/page_link_insights" class="extension-link" target="_blank">
-                        Code source →
-                    </a>
-                </div>
-
-                <div class="extension-card">
-                    <div class="extension-icon">🔤</div>
-                    <h3 class="extension-title">NLP Tools</h3>
-                    <div class="extension-meta">
-                        <span class="extension-status">⚡ Foundation</span>
-                    </div>
-                    <p class="extension-description">
-                        Moteur de traitement du langage naturel. Détection automatique de langue, 
-                        vectorisation de contenu et clustering thématique pour analyses sémantiques avancées.
-                    </p>
-                    <a href="https://github.com/friteuseb/nlp_tools" class="extension-link" target="_blank">
-                        Documentation →
-                    </a>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: rgba(102, 126, 234, 0.05); border-radius: var(--border-radius);">
-                <p style="color: var(--text-medium); font-style: italic;">
-                    📝 <strong>Article de référence publié sur TYPO3.org :</strong> 
-                    <a href="https://typo3.org/article/optimizing-website-internal-linking-with-typo3-extensions" 
-                       style="color: var(--secondary-color);" target="_blank">
-                        "Optimizing Website Internal Linking With TYPO3 Extensions"
-                    </a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section id="expertise" class="section expertise">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">💼 Compétences</div>
-                <h2 class="section-title">Expertise technique</h2>
-                <p class="section-subtitle">
-                    Plus de deux décennies d'expérience dans le développement web et la transformation digitale
-                </p>
-            </div>
-
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="expertise-icon">🏗️</div>
-                    <h3 class="expertise-title">Architecture TYPO3</h3>
-                    <p class="expertise-description">Conception et développement de solutions TYPO3 complexes depuis 2003. Expertise complète du CMS.</p>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">🔍</div>
-                    <h3 class="expertise-title">SEO & cocons sémantiques</h3>
-                    <p class="expertise-description">Stratégies avancées de référencement et création de maillages internes intelligents basés sur l'IA.</p>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">🤖</div>
-                    <h3 class="expertise-title">Intelligence artificielle</h3>
-                    <p class="expertise-description">Intégration de solutions IA pour analyser, optimiser et automatiser les processus digitaux.</p>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">👨‍💼</div>
-                    <h3 class="expertise-title">Product owner</h3>
-                    <p class="expertise-description">Direction produit pour applications mobiles et web dans l'industrie cosmétique internationale.</p>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">📈</div>
-                    <h3 class="expertise-title">Performance & analytics</h3>
-                    <p class="expertise-description">Audits techniques approfondis, optimisation des performances et analyse de métriques avancées.</p>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">🏭</div>
-                    <h3 class="expertise-title">Website factories</h3>
-                    <p class="expertise-description">Conception de solutions multi-marques scalables pour grandes corporations internationales.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">🎯 Réalisations</div>
-                <h2 class="section-title">Portfolio sélectionné</h2>
-                <p class="section-subtitle">
-                    Projets marquants dans différents secteurs : cosmétique, santé, institutionnel
-                </p>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-card">
-                    <div class="portfolio-image">📱</div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Application mobile & web VIP</h3>
-                        <p class="portfolio-company">Groupe international cosmétique</p>
-                        <p class="portfolio-description">
-                            Product owner d'une application stratégique pour executives et VIP. 
-                            Accès aux KPI et messages officiels du groupe.
-                        </p>
-                        <div class="portfolio-tech">
-                            <span class="tech-tag">Product owner</span>
-                            <span class="tech-tag">Mobile</span>
-                            <span class="tech-tag">Web app</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-image">🏭</div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Website factory multi-marques</h3>
-                        <p class="portfolio-company">Corporation internationale</p>
-                        <p class="portfolio-description">
-                            Conception d'une solution permettant la création efficace de sites web 
-                            pour diverses marques du groupe.
-                        </p>
-                        <div class="portfolio-tech">
-                            <span class="tech-tag">TYPO3</span>
-                            <span class="tech-tag">Architecture</span>
-                            <span class="tech-tag">Multi-site</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-card">
-                    <div class="portfolio-image">🏥</div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Plateforme résistance antibiotiques</h3>
-                        <p class="portfolio-company">Secteur santé</p>
-                        <p class="portfolio-description">
-                            AMOA pour plateforme de données ouvertes sur la résistance aux antibiotiques. 
-                            Impact national sur la santé publique.
-                        </p>
-                        <div class="portfolio-tech">
-                            <span class="tech-tag">Open data</span>
-                            <span class="tech-tag">AMOA</span>
-                            <span class="tech-tag">Santé</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Company Highlight -->
-    <section class="section">
-        <div class="container">
-            <div class="company-highlight">
-                <div class="company-logo">🏢 TALAN</div>
-                <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Expertise d'équipe</h3>
-                <p style="color: var(--text-medium); line-height: 1.6;">
-                    <strong>Avec mon équipe chez Talan</strong>, nous accompagnons les entreprises Fortune 500 
-                    dans leur transformation digitale. Notre expertise couvre la maintenance TYPO3, 
-                    le développement d'extensions, les montées en version et le conseil stratégique.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Prêt à transformer votre projet ?</h2>
-                <p class="section-subtitle">
-                    Discutons de vos besoins en TYPO3, SEO ou transformation digitale
-                </p>
-            </div>
-
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <h3 class="contact-title">Téléphone</h3>
-                    <div class="contact-details">
-                        <a href="tel:+33662375412">06 62 37 54 12</a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">💬</div>
-                    <h3 class="contact-title">TYPO3 Slack</h3>
-                    <div class="contact-details">
-                        Canal <strong>#semantic_suggestion</strong><br>
-                        @Cyril Wolfangel
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">💻</div>
-                    <h3 class="contact-title">GitHub</h3>
-                    <div class="contact-details">
-                        <a href="https://github.com/friteuseb" target="_blank">@friteuseb</a><br>
-                        Code source des extensions
-                    </div>
-                </div>
-            </div>
-
-            <div style="margin-top: 3rem;">
-                <a href="https://www.linkedin.com/in/cyrilwolfangel/" class="cta-primary" target="_blank">
-                    🔗 Connectons-nous sur LinkedIn
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Navigation smooth scroll
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animation des stats au scroll
-        const animateStats = () => {
-            const stats = document.querySelectorAll('.stat-number');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const target = entry.target;
-                        const finalValue = target.textContent;
-                        let currentValue = 0;
-                        
-                        if (finalValue.includes('+')) {
-                            const num = parseInt(finalValue);
-                            const increment = num / 30;
-                            const timer = setInterval(() => {
-                                currentValue += increment;
-                                if (currentValue >= num) {
-                                    target.textContent = num + '+';
-                                    clearInterval(timer);
-                                } else {
-                                    target.textContent = Math.floor(currentValue) + '+';
-                                }
-                            }, 50);
-                        } else if (!isNaN(finalValue)) {
-                            const num = parseInt(finalValue);
-                            const increment = num / 30;
-                            const timer = setInterval(() => {
-                                currentValue += increment;
-                                if (currentValue >= num) {
-                                    target.textContent = num;
-                                    clearInterval(timer);
-                                } else {
-                                    target.textContent = Math.floor(currentValue);
-                                }
-                            }, 50);
-                        }
-                        observer.unobserve(target);
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            stats.forEach(stat => observer.observe(stat));
-        };
-
-        // Animation des cartes au scroll
-        const animateCards = () => {
-            const cards = document.querySelectorAll('.extension-card, .expertise-card, .portfolio-card');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { 
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            });
-
-            cards.forEach((card, index) => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-                card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-                observer.observe(card);
-            });
-        };
-
-        // Navbar background au scroll
-        const handleNavScroll = () => {
-            const nav = document.querySelector('.nav');
-            let lastScrollY = window.scrollY;
-
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 100) {
-                    nav.style.background = 'rgba(255, 255, 255, 0.98)';
-                    nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
-                } else {
-                    nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                    nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-                }
-
-                // Hide/show nav on scroll
-                if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                    nav.style.transform = 'translateY(-100%)';
-                } else {
-                    nav.style.transform = 'translateY(0)';
-                }
-                lastScrollY = window.scrollY;
-            });
-        };
-
-        // Effet hover amélioré pour les boutons
-        const enhanceButtons = () => {
-            document.querySelectorAll('.cta-primary, .cta-secondary').forEach(button => {
-                button.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-3px) scale(1.02)';
-                });
-                
-                button.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-
-                button.addEventListener('click', function(e) {
-                    // Effet ripple
-                    const ripple = document.createElement('span');
-                    const rect = this.getBoundingClientRect();
-                    const size = Math.max(rect.width, rect.height);
-                    const x = e.clientX - rect.left - size / 2;
-                    const y = e.clientY - rect.top - size / 2;
-                    
-                    ripple.style.cssText = `
-                        position: absolute;
-                        width: ${size}px;
-                        height: ${size}px;
-                        left: ${x}px;
-                        top: ${y}px;
-                        background: rgba(255, 255, 255, 0.3);
-                        border-radius: 50%;
-                        transform: scale(0);
-                        animation: ripple 0.6s linear;
-                        pointer-events: none;
-                    `;
-                    
-                    this.style.position = 'relative';
-                    this.style.overflow = 'hidden';
-                    this.appendChild(ripple);
-                    
-                    setTimeout(() => ripple.remove(), 600);
-                });
-            });
-        };
-
-        // Lazy loading pour les images (si ajoutées plus tard)
-        const lazyLoadImages = () => {
-            const images = document.querySelectorAll('img[data-src]');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.src = img.dataset.src;
-                        img.removeAttribute('data-src');
-                        observer.unobserve(img);
-                    }
-                });
-            });
-            images.forEach(img => observer.observe(img));
-        };
-
-        // Préchargement des pages critiques
-        const preloadCriticalPages = () => {
-            const criticalLinks = [
-                'https://www.linkedin.com/in/cyrilwolfangel/',
-                'https://cyril-wolfangel.com/',
-                'https://extensions.typo3.org/extension/semantic_suggestion'
-            ];
-
-            criticalLinks.forEach(url => {
-                const link = document.createElement('link');
-                link.rel = 'prefetch';
-                link.href = url;
-                document.head.appendChild(link);
-            });
-        };
-
-        // Initialisation au chargement
-        document.addEventListener('DOMContentLoaded', function() {
-            animateStats();
-            animateCards();
-            handleNavScroll();
-            enhanceButtons();
-            lazyLoadImages();
-            preloadCriticalPages();
-        });
-
-        // Performance monitoring simple
-        window.addEventListener('load', function() {
-            if ('performance' in window) {
-                const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-                if (loadTime > 3000) {
-                    console.warn('Page load time:', loadTime + 'ms - Consider optimization');
-                }
-            }
-        });
-    </script>
-
-    <!-- CSS pour les animations -->
-    <style>
-        @keyframes ripple {
-            to {
-                transform: scale(4);
-                opacity: 0;
-            }
-        }
-
-        /* Améliorations d'accessibilité */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-
-        /* Focus states pour l'accessibilité */
-        .nav-links a:focus,
-        .cta-primary:focus,
-        .cta-secondary:focus,
-        .extension-link:focus {
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
-        }
-
-        /* Amélioration du contraste pour l'accessibilité */
-        .section-badge {
-            font-weight: 700;
-        }
-
-        .extension-meta {
-            font-weight: 600;
-        }
-
-        /* Optimisation mobile */
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            .cta-primary,
-            .cta-secondary {
-                width: 100%;
-                margin: 0.5rem 0;
-            }
-        }
-
-        /* Navigation mobile simple */
-        @media (max-width: 768px) {
-            .nav-container::after {
-                content: '☰';
-                font-size: 1.5rem;
-                color: var(--primary-color);
-                cursor: pointer;
-            }
-        }
-
-        /* Amélioration du loading */
-        .loading {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .loaded {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    </div>
 </body>
 </html>
